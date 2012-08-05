@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89CF3A90156829D700FB2D28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF3A8F156829D700FB2D28 /* UIKit.framework */; };
+		89CF3A92156829D700FB2D28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF3A91156829D700FB2D28 /* Foundation.framework */; };
+		89CF3A94156829D700FB2D28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF3A93156829D700FB2D28 /* CoreGraphics.framework */; };
+		89CF3A9A156829D700FB2D28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3A98156829D700FB2D28 /* InfoPlist.strings */; };
+		89CF3A9C156829D700FB2D28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3A9B156829D700FB2D28 /* main.m */; };
+		89CF3AA0156829D700FB2D28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3A9F156829D700FB2D28 /* AppDelegate.m */; };
+		89CF3AA3156829D700FB2D28 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3AA1156829D700FB2D28 /* MainStoryboard_iPhone.storyboard */; };
+		89CF3AA6156829D700FB2D28 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3AA4156829D700FB2D28 /* MainStoryboard_iPad.storyboard */; };
+		89CF3AA9156829D700FB2D28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3AA8156829D700FB2D28 /* ViewController.m */; };
+		89CF3AC915683B9000FB2D28 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3AB515683B9000FB2D28 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89CF3ACA15683B9000FB2D28 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3AB715683B9000FB2D28 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89CF3ACB15683B9000FB2D28 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3AB915683B9000FB2D28 /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89CF3ACC15683B9000FB2D28 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3ABB15683B9000FB2D28 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89CF3ACD15683B9000FB2D28 /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3ABD15683B9000FB2D28 /* AFJSONUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89CF3ACE15683B9000FB2D28 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3ABF15683B9000FB2D28 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89CF3ACF15683B9000FB2D28 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3AC215683B9000FB2D28 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89CF3AD015683B9000FB2D28 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3AC415683B9000FB2D28 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89CF3AD115683B9000FB2D28 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3AC615683B9000FB2D28 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89CF3AD215683B9000FB2D28 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3AC815683B9000FB2D28 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89CF3AD51568455700FB2D28 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF3AD41568455700FB2D28 /* CoreLocation.framework */; };
+		89CF3ADE156869F600FB2D28 /* CityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3ADC156869F600FB2D28 /* CityDetailViewController.m */; };
+		89CF3AE51568990300FB2D28 /* Rdio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF3AE41568990300FB2D28 /* Rdio.framework */; };
+		89CF3AE71568994900FB2D28 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF3AE61568994900FB2D28 /* CFNetwork.framework */; };
+		89CF3AE91568995400FB2D28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF3AE81568995400FB2D28 /* SystemConfiguration.framework */; };
+		89CF3AEB1568996A00FB2D28 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF3AEA1568996A00FB2D28 /* AudioToolbox.framework */; };
+		89CF3AED1568997600FB2D28 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF3AEC1568997600FB2D28 /* Security.framework */; };
+		89CF3AF71568CFFF00FB2D28 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF3AF61568CFFF00FB2D28 /* CoreFoundation.framework */; };
+		89CF3AFB1568EE5F00FB2D28 /* MoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF3AF91568EE5E00FB2D28 /* MoodViewController.m */; };
+		89CF3AFE1568FB7300FB2D28 /* foryou1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3AFD1568FB7200FB2D28 /* foryou1.png */; };
+		89CF3B001568FC0200FB2D28 /* hot8fixed.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3AFF1568FC0200FB2D28 /* hot8fixed.png */; };
+		89CF3B051568FC1C00FB2D28 /* fixed0.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3B011568FC1C00FB2D28 /* fixed0.png */; };
+		89CF3B061568FC1C00FB2D28 /* fixed2.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3B021568FC1C00FB2D28 /* fixed2.png */; };
+		89CF3B071568FC1C00FB2D28 /* fixed4.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3B031568FC1C00FB2D28 /* fixed4.png */; };
+		89CF3B081568FC1C00FB2D28 /* fixed6.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3B041568FC1C00FB2D28 /* fixed6.png */; };
+		89CF3B0A1568FFA000FB2D28 /* la.gif in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3B091568FFA000FB2D28 /* la.gif */; };
+		89CF3B0C1568FFB600FB2D28 /* sanfran.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3B0B1568FFB600FB2D28 /* sanfran.jpg */; };
+		89CF3B0E1568FFCE00FB2D28 /* NY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3B0D1568FFCE00FB2D28 /* NY.jpg */; };
+		89CF3B101568FFDC00FB2D28 /* miami.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3B0F1568FFDC00FB2D28 /* miami.jpg */; };
+		89CF3B121568FFFD00FB2D28 /* chicago.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3B111568FFFD00FB2D28 /* chicago.jpeg */; };
+		89CF3B1415691B1600FB2D28 /* cityvibes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3B1315691B1600FB2D28 /* cityvibes.jpg */; };
+		89CF3B1615691DE200FB2D28 /* legend.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CF3B1515691DE200FB2D28 /* legend.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		89CF3A8B156829D700FB2D28 /* WeatherBasedMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherBasedMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89CF3A8F156829D700FB2D28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		89CF3A91156829D700FB2D28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		89CF3A93156829D700FB2D28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		89CF3A97156829D700FB2D28 /* WeatherBasedMusic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherBasedMusic-Info.plist"; sourceTree = "<group>"; };
+		89CF3A99156829D700FB2D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89CF3A9B156829D700FB2D28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89CF3A9D156829D700FB2D28 /* WeatherBasedMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeatherBasedMusic-Prefix.pch"; sourceTree = "<group>"; };
+		89CF3A9E156829D700FB2D28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		89CF3A9F156829D700FB2D28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		89CF3AA2156829D700FB2D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		89CF3AA5156829D700FB2D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		89CF3AA7156829D700FB2D28 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		89CF3AA8156829D700FB2D28 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		89CF3AB415683B9000FB2D28 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		89CF3AB515683B9000FB2D28 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		89CF3AB615683B9000FB2D28 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		89CF3AB715683B9000FB2D28 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		89CF3AB815683B9000FB2D28 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		89CF3AB915683B9000FB2D28 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		89CF3ABA15683B9000FB2D28 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		89CF3ABB15683B9000FB2D28 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		89CF3ABC15683B9000FB2D28 /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONUtilities.h; sourceTree = "<group>"; };
+		89CF3ABD15683B9000FB2D28 /* AFJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONUtilities.m; sourceTree = "<group>"; };
+		89CF3ABE15683B9000FB2D28 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		89CF3ABF15683B9000FB2D28 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		89CF3AC015683B9000FB2D28 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		89CF3AC115683B9000FB2D28 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		89CF3AC215683B9000FB2D28 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		89CF3AC315683B9000FB2D28 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		89CF3AC415683B9000FB2D28 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		89CF3AC515683B9000FB2D28 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		89CF3AC615683B9000FB2D28 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		89CF3AC715683B9000FB2D28 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		89CF3AC815683B9000FB2D28 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		89CF3AD41568455700FB2D28 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		89CF3ADB156869F600FB2D28 /* CityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityDetailViewController.h; path = ../CityDetailViewController.h; sourceTree = "<group>"; };
+		89CF3ADC156869F600FB2D28 /* CityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityDetailViewController.m; path = ../CityDetailViewController.m; sourceTree = "<group>"; };
+		89CF3AE41568990300FB2D28 /* Rdio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rdio.framework; path = WeatherBasedMusic/Rdio.framework; sourceTree = "<group>"; };
+		89CF3AE61568994900FB2D28 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		89CF3AE81568995400FB2D28 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		89CF3AEA1568996A00FB2D28 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		89CF3AEC1568997600FB2D28 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		89CF3AF61568CFFF00FB2D28 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		89CF3AF81568EE5E00FB2D28 /* MoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodViewController.h; sourceTree = "<group>"; };
+		89CF3AF91568EE5E00FB2D28 /* MoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodViewController.m; sourceTree = "<group>"; };
+		89CF3AFD1568FB7200FB2D28 /* foryou1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foryou1.png; path = ../foryou1.png; sourceTree = "<group>"; };
+		89CF3AFF1568FC0200FB2D28 /* hot8fixed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hot8fixed.png; sourceTree = "<group>"; };
+		89CF3B011568FC1C00FB2D28 /* fixed0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fixed0.png; sourceTree = "<group>"; };
+		89CF3B021568FC1C00FB2D28 /* fixed2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fixed2.png; sourceTree = "<group>"; };
+		89CF3B031568FC1C00FB2D28 /* fixed4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fixed4.png; sourceTree = "<group>"; };
+		89CF3B041568FC1C00FB2D28 /* fixed6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fixed6.png; sourceTree = "<group>"; };
+		89CF3B091568FFA000FB2D28 /* la.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = la.gif; sourceTree = "<group>"; };
+		89CF3B0B1568FFB600FB2D28 /* sanfran.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sanfran.jpg; sourceTree = "<group>"; };
+		89CF3B0D1568FFCE00FB2D28 /* NY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NY.jpg; sourceTree = "<group>"; };
+		89CF3B0F1568FFDC00FB2D28 /* miami.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = miami.jpg; sourceTree = "<group>"; };
+		89CF3B111568FFFD00FB2D28 /* chicago.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chicago.jpeg; sourceTree = "<group>"; };
+		89CF3B1315691B1600FB2D28 /* cityvibes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cityvibes.jpg; sourceTree = "<group>"; };
+		89CF3B1515691DE200FB2D28 /* legend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legend.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89CF3A88156829D700FB2D28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CF3AF71568CFFF00FB2D28 /* CoreFoundation.framework in Frameworks */,
+				89CF3AED1568997600FB2D28 /* Security.framework in Frameworks */,
+				89CF3AEB1568996A00FB2D28 /* AudioToolbox.framework in Frameworks */,
+				89CF3AE91568995400FB2D28 /* SystemConfiguration.framework in Frameworks */,
+				89CF3AE71568994900FB2D28 /* CFNetwork.framework in Frameworks */,
+				89CF3AD51568455700FB2D28 /* CoreLocation.framework in Frameworks */,
+				89CF3A90156829D700FB2D28 /* UIKit.framework in Frameworks */,
+				89CF3A92156829D700FB2D28 /* Foundation.framework in Frameworks */,
+				89CF3A94156829D700FB2D28 /* CoreGraphics.framework in Frameworks */,
+				89CF3AE51568990300FB2D28 /* Rdio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89CF3A80156829D700FB2D28 = {
+			isa = PBXGroup;
+			children = (
+				89CF3A95156829D700FB2D28 /* WeatherBasedMusic */,
+				89CF3A8E156829D700FB2D28 /* Frameworks */,
+				89CF3A8C156829D700FB2D28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89CF3A8C156829D700FB2D28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89CF3A8B156829D700FB2D28 /* WeatherBasedMusic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89CF3A8E156829D700FB2D28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89CF3AF61568CFFF00FB2D28 /* CoreFoundation.framework */,
+				89CF3AE41568990300FB2D28 /* Rdio.framework */,
+				89CF3AEC1568997600FB2D28 /* Security.framework */,
+				89CF3AEA1568996A00FB2D28 /* AudioToolbox.framework */,
+				89CF3AE81568995400FB2D28 /* SystemConfiguration.framework */,
+				89CF3AE61568994900FB2D28 /* CFNetwork.framework */,
+				89CF3AD41568455700FB2D28 /* CoreLocation.framework */,
+				89CF3A8F156829D700FB2D28 /* UIKit.framework */,
+				89CF3A91156829D700FB2D28 /* Foundation.framework */,
+				89CF3A93156829D700FB2D28 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89CF3A95156829D700FB2D28 /* WeatherBasedMusic */ = {
+			isa = PBXGroup;
+			children = (
+				89CF3AB315683B9000FB2D28 /* AFNetworking */,
+				89CF3A9E156829D700FB2D28 /* AppDelegate.h */,
+				89CF3A9F156829D700FB2D28 /* AppDelegate.m */,
+				89CF3AA1156829D700FB2D28 /* MainStoryboard_iPhone.storyboard */,
+				89CF3AA4156829D700FB2D28 /* MainStoryboard_iPad.storyboard */,
+				89CF3AA7156829D700FB2D28 /* ViewController.h */,
+				89CF3AA8156829D700FB2D28 /* ViewController.m */,
+				89CF3ADB156869F600FB2D28 /* CityDetailViewController.h */,
+				89CF3ADC156869F600FB2D28 /* CityDetailViewController.m */,
+				89CF3AF81568EE5E00FB2D28 /* MoodViewController.h */,
+				89CF3AF91568EE5E00FB2D28 /* MoodViewController.m */,
+				89CF3A96156829D700FB2D28 /* Supporting Files */,
+			);
+			path = WeatherBasedMusic;
+			sourceTree = "<group>";
+		};
+		89CF3A96156829D700FB2D28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89CF3B1515691DE200FB2D28 /* legend.png */,
+				89CF3B1315691B1600FB2D28 /* cityvibes.jpg */,
+				89CF3B111568FFFD00FB2D28 /* chicago.jpeg */,
+				89CF3B0F1568FFDC00FB2D28 /* miami.jpg */,
+				89CF3B0D1568FFCE00FB2D28 /* NY.jpg */,
+				89CF3B0B1568FFB600FB2D28 /* sanfran.jpg */,
+				89CF3B091568FFA000FB2D28 /* la.gif */,
+				89CF3B011568FC1C00FB2D28 /* fixed0.png */,
+				89CF3B021568FC1C00FB2D28 /* fixed2.png */,
+				89CF3B031568FC1C00FB2D28 /* fixed4.png */,
+				89CF3B041568FC1C00FB2D28 /* fixed6.png */,
+				89CF3AFF1568FC0200FB2D28 /* hot8fixed.png */,
+				89CF3AFD1568FB7200FB2D28 /* foryou1.png */,
+				89CF3A97156829D700FB2D28 /* WeatherBasedMusic-Info.plist */,
+				89CF3A98156829D700FB2D28 /* InfoPlist.strings */,
+				89CF3A9B156829D700FB2D28 /* main.m */,
+				89CF3A9D156829D700FB2D28 /* WeatherBasedMusic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89CF3AB315683B9000FB2D28 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				89CF3AB415683B9000FB2D28 /* AFHTTPClient.h */,
+				89CF3AB515683B9000FB2D28 /* AFHTTPClient.m */,
+				89CF3AB615683B9000FB2D28 /* AFHTTPRequestOperation.h */,
+				89CF3AB715683B9000FB2D28 /* AFHTTPRequestOperation.m */,
+				89CF3AB815683B9000FB2D28 /* AFImageRequestOperation.h */,
+				89CF3AB915683B9000FB2D28 /* AFImageRequestOperation.m */,
+				89CF3ABA15683B9000FB2D28 /* AFJSONRequestOperation.h */,
+				89CF3ABB15683B9000FB2D28 /* AFJSONRequestOperation.m */,
+				89CF3ABC15683B9000FB2D28 /* AFJSONUtilities.h */,
+				89CF3ABD15683B9000FB2D28 /* AFJSONUtilities.m */,
+				89CF3ABE15683B9000FB2D28 /* AFNetworkActivityIndicatorManager.h */,
+				89CF3ABF15683B9000FB2D28 /* AFNetworkActivityIndicatorManager.m */,
+				89CF3AC015683B9000FB2D28 /* AFNetworking.h */,
+				89CF3AC115683B9000FB2D28 /* AFPropertyListRequestOperation.h */,
+				89CF3AC215683B9000FB2D28 /* AFPropertyListRequestOperation.m */,
+				89CF3AC315683B9000FB2D28 /* AFURLConnectionOperation.h */,
+				89CF3AC415683B9000FB2D28 /* AFURLConnectionOperation.m */,
+				89CF3AC515683B9000FB2D28 /* AFXMLRequestOperation.h */,
+				89CF3AC615683B9000FB2D28 /* AFXMLRequestOperation.m */,
+				89CF3AC715683B9000FB2D28 /* UIImageView+AFNetworking.h */,
+				89CF3AC815683B9000FB2D28 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89CF3A8A156829D700FB2D28 /* WeatherBasedMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89CF3AAC156829D700FB2D28 /* Build configuration list for PBXNativeTarget "WeatherBasedMusic" */;
+			buildPhases = (
+				89CF3A87156829D700FB2D28 /* Sources */,
+				89CF3A88156829D700FB2D28 /* Frameworks */,
+				89CF3A89156829D700FB2D28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherBasedMusic;
+			productName = WeatherBasedMusic;
+			productReference = 89CF3A8B156829D700FB2D28 /* WeatherBasedMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89CF3A82156829D700FB2D28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 89CF3A85156829D700FB2D28 /* Build configuration list for PBXProject "WeatherBasedMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89CF3A80156829D700FB2D28;
+			productRefGroup = 89CF3A8C156829D700FB2D28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89CF3A8A156829D700FB2D28 /* WeatherBasedMusic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89CF3A89156829D700FB2D28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CF3A9A156829D700FB2D28 /* InfoPlist.strings in Resources */,
+				89CF3AA3156829D700FB2D28 /* MainStoryboard_iPhone.storyboard in Resources */,
+				89CF3AA6156829D700FB2D28 /* MainStoryboard_iPad.storyboard in Resources */,
+				89CF3AFE1568FB7300FB2D28 /* foryou1.png in Resources */,
+				89CF3B001568FC0200FB2D28 /* hot8fixed.png in Resources */,
+				89CF3B051568FC1C00FB2D28 /* fixed0.png in Resources */,
+				89CF3B061568FC1C00FB2D28 /* fixed2.png in Resources */,
+				89CF3B071568FC1C00FB2D28 /* fixed4.png in Resources */,
+				89CF3B081568FC1C00FB2D28 /* fixed6.png in Resources */,
+				89CF3B0A1568FFA000FB2D28 /* la.gif in Resources */,
+				89CF3B0C1568FFB600FB2D28 /* sanfran.jpg in Resources */,
+				89CF3B0E1568FFCE00FB2D28 /* NY.jpg in Resources */,
+				89CF3B101568FFDC00FB2D28 /* miami.jpg in Resources */,
+				89CF3B121568FFFD00FB2D28 /* chicago.jpeg in Resources */,
+				89CF3B1415691B1600FB2D28 /* cityvibes.jpg in Resources */,
+				89CF3B1615691DE200FB2D28 /* legend.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89CF3A87156829D700FB2D28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CF3A9C156829D700FB2D28 /* main.m in Sources */,
+				89CF3AA0156829D700FB2D28 /* AppDelegate.m in Sources */,
+				89CF3AA9156829D700FB2D28 /* ViewController.m in Sources */,
+				89CF3AC915683B9000FB2D28 /* AFHTTPClient.m in Sources */,
+				89CF3ACA15683B9000FB2D28 /* AFHTTPRequestOperation.m in Sources */,
+				89CF3ACB15683B9000FB2D28 /* AFImageRequestOperation.m in Sources */,
+				89CF3ACC15683B9000FB2D28 /* AFJSONRequestOperation.m in Sources */,
+				89CF3ACD15683B9000FB2D28 /* AFJSONUtilities.m in Sources */,
+				89CF3ACE15683B9000FB2D28 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				89CF3ACF15683B9000FB2D28 /* AFPropertyListRequestOperation.m in Sources */,
+				89CF3AD015683B9000FB2D28 /* AFURLConnectionOperation.m in Sources */,
+				89CF3AD115683B9000FB2D28 /* AFXMLRequestOperation.m in Sources */,
+				89CF3AD215683B9000FB2D28 /* UIImageView+AFNetworking.m in Sources */,
+				89CF3ADE156869F600FB2D28 /* CityDetailViewController.m in Sources */,
+				89CF3AFB1568EE5F00FB2D28 /* MoodViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89CF3A98156829D700FB2D28 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89CF3A99156829D700FB2D28 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89CF3AA1156829D700FB2D28 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89CF3AA2156829D700FB2D28 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		89CF3AA4156829D700FB2D28 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89CF3AA5156829D700FB2D28 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89CF3AAA156829D700FB2D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89CF3AAB156829D700FB2D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89CF3AAD156829D700FB2D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WeatherBasedMusic\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherBasedMusic/WeatherBasedMusic-Prefix.pch";
+				INFOPLIST_FILE = "WeatherBasedMusic/WeatherBasedMusic-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		89CF3AAE156829D700FB2D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WeatherBasedMusic\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherBasedMusic/WeatherBasedMusic-Prefix.pch";
+				INFOPLIST_FILE = "WeatherBasedMusic/WeatherBasedMusic-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89CF3A85156829D700FB2D28 /* Build configuration list for PBXProject "WeatherBasedMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89CF3AAA156829D700FB2D28 /* Debug */,
+				89CF3AAB156829D700FB2D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89CF3AAC156829D700FB2D28 /* Build configuration list for PBXNativeTarget "WeatherBasedMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89CF3AAD156829D700FB2D28 /* Debug */,
+				89CF3AAE156829D700FB2D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89CF3A82156829D700FB2D28 /* Project object */;
+}

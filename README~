@@ -1,0 +1,5 @@
+This Project was done at Techcrunch Disrupt NY. Goal was to make an app that lists all songs played in the city
+and also shows the mood of the city from the song. 
+This project uses echonest API and Rdio. 
+It parses shazam tweets for a city to get the trending songs.
+From the songs project uses echonest and Rdio to get songs.
